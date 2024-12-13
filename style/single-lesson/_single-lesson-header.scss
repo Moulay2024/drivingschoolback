@@ -8,14 +8,14 @@
 
   display: flex;
   align-self: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 15%;
 
   &__logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 5%;
+    padding-left: 5%;
     gap: 20px;
 
     .logo__left {
@@ -39,12 +39,16 @@
   &__links {
     display: flex;
     align-items: center;
-    gap: 60px;
+    padding-right: 5%;
+    gap: 70px;
     z-index: 2;
     transform-origin: top;
 
+    .contact-link{
+      color: #31d8da;
+    }
 
-    &.open-nav__links {
+    &.open-nav__links{
       height: 350px;
       bottom: -370px;
     }
@@ -60,7 +64,7 @@
       &:hover {
         color: #31d8da;
       }
-    }
+    } 
 
     .about {
       cursor: pointer;
@@ -88,14 +92,21 @@
 
       &:hover .about__hover {
         display: flex;
-
+    
         a {
           color: gray;
-
+    
           &:hover {
             color: #31d8da;
           }
         }
+      }
+
+      &:hover a {
+        color: #31d8da;
+      }
+      &:hover i {
+        color: #31d8da;
       }
 
       i {
@@ -114,17 +125,18 @@
       display: none;
       flex-direction: column;
       align-items: center;
+      gap: 15px;
 
       a {
         width: calc(100% - 50px);
         padding-left: 50px;
-        height: 35px;
+        height: 40px;
         display: flex;
         align-items: center;
       }
       &.open {
         display: flex;
-        height: 70px;
+        height: 80px;
         transform: scale(1);
       }
     }
@@ -196,7 +208,7 @@
       font-size: 50px;
       font-weight: 500;
       font-style: normal;
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       color: #ffffff;
       letter-spacing: 0px;
       margin: 0;
@@ -211,48 +223,10 @@
 }
 
 //  BIG SCREENS
-@media (min-width: 1600px) {
-  .nav {
-    width: calc(100% - 20%);
-    padding: 0 10%;
-    justify-content: space-between;
-    &__logo {
-      margin-left: 0;
-    }
-    &__links{
-      margin: 0;
-    }
-  }
-}
-
 @media only screen and (max-width: 1400px) {
   .nav {
-    width: calc(100% - 120px);
-    padding: 0 60px;
-    gap: 0;
-    justify-content: space-between;
     &__links {
       gap: 40px;
-    }
-
-    &__logo {
-      margin-left: 0 !important;
-    }
-  }
-
-}
-
-@media (max-width: 1200px) {
-  .nav {
-    width: calc(100% - 40px);
-    height: 100px;
-    padding: 0 20px;
-
-    &__links {
-      gap: 35px;
-      a {
-        font-size: 13px;
-      }
     }
   }
 }
@@ -367,17 +341,6 @@
 }
 @media (max-width: 400px){
   .nav{
-    &__logo {
-      left: 15px;
-    }
-    &__menu {
-      right: 30px;
-    }
-    .about{
-      i{
-        font-size: 18px;
-      }
-    }
     .about{
       i{
         font-size: 18px;
