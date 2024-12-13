@@ -6,21 +6,11 @@
   height: 80px;
   z-index: 3;
 
-  // .active {
-  //   background-color: red;
-  //   width: 270px;
-  //   height: 220px;
-  // }
-
-  &.active-80{
-    height: 80px;
-  }
-  &.active-220{
+  .active{
+    background-color: red;
+    width: 270px;
     height: 220px;
-  }
-  &.active-300{
-    height: 300px;
-  }
+}
 
   border-radius: 50px;
   background-color: white;
@@ -48,61 +38,30 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    // padding-top: 30px;
+    justify-content: center;
     cursor: auto;
     transition: 300ms transform;
 
-    &__socials {
-      // display: none !important;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      height: 0;
-      transform: scaleY(0);
-      width: 100%;
-      bottom: 0;
-      margin-top: 20px;
-      border-top: 1px solid #d9d9d9;
-
-      a {
-        i {
-          font-size: 40px !important;
-          margin: 0 !important;
-
-          &:hover {
-            filter: brightness(125%);
-          }
-        }
-      }
-      &.active {
-        transform: scaleY(1);
-        background-color: white;
-
-        height: 80px;
-      }
-    }
-    .user {
+    .user{
       opacity: 0;
     }
-    .arrow {
+    .arrow{
       opacity: 0;
-      z-index: 3;
-      color: black;
-      // position: absolute;
-      cursor: pointer;
-      bottom: 0;
-      font-size: 20px;
-
-      &:hover {
-        color: #31d8da;
-      }
-      &.rotate {
-        transform: rotate(180deg);
-      }
     }
     i {
       font-size: 80px;
+
+      &:nth-child(5) {
+        color: black;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        font-size: 20px;
+
+        &:hover{
+            color: #31d8da;
+        }
+      }
     }
     h3 {
       font-size: 17px;
@@ -131,7 +90,7 @@
       }
     }
     &__closebtn {
-      cursor: pointer;
+        cursor: pointer;
       position: absolute;
       z-index: 3;
       top: 8px;
@@ -144,9 +103,9 @@
       align-items: center;
       justify-content: center;
 
-      &:hover span {
+      &:hover span{
         background: #31d8da;
-      }
+    }
 
       span {
         position: absolute;
@@ -181,7 +140,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px){
   .call {
     width: 70px;
     height: 70px;
