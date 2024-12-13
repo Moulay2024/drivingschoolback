@@ -7,6 +7,7 @@
   z-index: 12;
   display: flex;
   align-self: center;
+  justify-content: space-around;
   gap: 15%;
 }
 
@@ -256,7 +257,6 @@
   .nav {
     position: absolute;
     align-items: center;
-    justify-content: center;
   }
   .nav__links {
     background-color: white;
@@ -376,10 +376,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 a {

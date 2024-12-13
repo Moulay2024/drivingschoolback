@@ -5,10 +5,6 @@ body {
   font-family: sans-serif;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -425,6 +421,7 @@ footer .footer__copyright h3 {
   z-index: 12;
   display: flex;
   align-self: center;
+  justify-content: space-around;
   gap: 15%;
 }
 
@@ -678,7 +675,6 @@ footer .footer__copyright h3 {
   .nav {
     position: absolute;
     align-items: center;
-    justify-content: center;
   }
   .nav__links {
     background-color: white;
