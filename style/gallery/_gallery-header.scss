@@ -43,6 +43,10 @@
       z-index: 2;
       transform-origin: top;
   
+      .contact-link{
+        color: #31d8da;
+      }
+  
       &.open-nav__links{
         height: 350px;
         bottom: -370px;
@@ -125,7 +129,7 @@
   
   
         a {
-          width: calc(100% - 50px);
+          width: calc(100% - 30px);
           padding-left: 50px;
           height: 100%;
           display: flex;
@@ -247,9 +251,9 @@
         gap: 0;
         z-index: 4;
   
-        .gallery-link{
+        .contact-link{
           background-color: #31d8da;
-          color: white !important; 
+          color: white;
   
           &:hover{
             color: white;
